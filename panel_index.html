@@ -1,0 +1,318 @@
+<html>
+<head>
+  <title>PANEL[STAGE:]</title>
+	<link rel="stylesheet" type="text/css" href="/resource/main.css" media="all">
+  <!-- icon -->
+  <link rel="SHORTCUT ICON" href="/resource/favicon.ico">
+</head>
+<body bgcolor="#ffffff">
+
+<!--mobile setting  -->
+<meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8">
+
+<!--キャンバス　描画エリア-->
+	<div class="canvas-wrapper">
+		<canvas id="wallpaper-area" width="400" height="600"></canvas>
+		<canvas id="animation-area" width="400" height="600"></canvas>
+		<canvas id="message-area" width="400" height="600"></canvas>
+		<canvas id="touching-area" width="400" height="600"></canvas>
+		<!-- 46pix * 8_col * 10_row-->
+		<table id="panels">
+			<td id="p_0_0" width="46" height="46">
+				<img id="i_0_0" src="/resource/panel.png">
+			</td>
+			<td id="p_0_1" width="46" height="46">
+				<img id="i_0_1" src="/resource/panel.png">
+			</td>
+			<td id="p_0_2" width="46" height="46">
+				<img id="i_0_2" src="/resource/panel.png">
+			</td>
+			<td id="p_0_3" width="46" height="46">
+				<img id="i_0_3" src="/resource/panel.png">
+			</td>
+			<td id="p_0_4" width="46" height="46">
+				<img id="i_0_4" src="/resource/panel.png">
+			</td>
+			<td id="p_0_5" width="46" height="46">
+				<img id="i_0_5" src="/resource/panel.png">
+			</td>
+			<td id="p_0_6" width="46" height="46">
+				<img id="i_0_6" src="/resource/panel.png">
+			</td>
+			<td id="p_0_7" width="46" height="46" >
+				<img id="i_0_7" src="/resource/panel.png">
+			</td>
+
+			<tr></tr>
+			<td id="p_1_0" width="46" height="46" >
+				<img id="i_1_0" src="/resource/panel.png">
+			</td>
+			<td id="p_1_1" width="46" height="46" >
+				<img id="i_1_1" src="/resource/panel.png">
+			</td>
+			<td id="p_1_2" width="46" height="46" >
+				<img id="i_1_2" src="/resource/panel.png">
+			</td>
+			<td id="p_1_3" width="46" height="46" >
+				<img id="i_1_3" src="/resource/panel.png">
+			</td>
+			<td id="p_1_4" width="46" height="46" >
+				<img id="i_1_4" src="/resource/panel.png">
+			</td>
+			<td id="p_1_5" width="46" height="46" >
+				<img id="i_1_5" src="/resource/panel.png">
+			</td>
+			<td id="p_1_6" width="46" height="46" >
+				<img id="i_1_6" src="/resource/panel.png">
+			</td>
+			<td id="p_1_7" width="46" height="46" >
+				<img id="i_1_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_2_0" width="46" height="46" >
+				<img id="i_2_0" src="/resource/panel.png">
+			</td>
+			<td id="p_2_1" width="46" height="46" >
+				<img id="i_2_1" src="/resource/panel.png">
+			</td>
+			<td id="p_2_2" width="46" height="46" >
+				<img id="i_2_2" src="/resource/panel.png">
+			</td>
+			<td id="p_2_3" width="46" height="46" >
+				<img id="i_2_3" src="/resource/panel.png">
+			</td>
+			<td id="p_2_4" width="46" height="46" >
+				<img id="i_2_4" src="/resource/panel.png">
+			</td>
+			<td id="p_2_5" width="46" height="46" >
+				<img id="i_2_5" src="/resource/panel.png">
+			</td>
+			<td id="p_2_6" width="46" height="46" >
+				<img id="i_2_6" src="/resource/panel.png">
+			</td>
+			<td id="p_2_7" width="46" height="46" >
+				<img id="i_2_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_3_0" width="46" height="46" >
+				<img id="i_3_0" src="/resource/panel.png">
+			</td>
+			<td id="p_3_1" width="46" height="46" >
+				<img id="i_3_1" src="/resource/panel.png">
+			</td>
+			<td id="p_3_2" width="46" height="46" >
+				<img id="i_3_2" src="/resource/panel.png">
+			</td>
+			<td id="p_3_3" width="46" height="46" >
+				<img id="i_3_3" src="/resource/panel.png">
+			</td>
+			<td id="p_3_4" width="46" height="46" >
+				<img id="i_3_4" src="/resource/panel.png">
+			</td>
+			<td id="p_3_5" width="46" height="46" >
+				<img id="i_3_5" src="/resource/panel.png">
+			</td>
+			<td id="p_3_6" width="46" height="46" >
+				<img id="i_3_6" src="/resource/panel.png">
+			</td>
+			<td id="p_3_7" width="46" height="46" >
+				<img id="i_3_7" src="/resource/panel.png">
+			</td>
+
+			<tr></tr>
+			<td id="p_4_0" width="46" height="46" >
+				<img id="i_4_0" src="/resource/panel.png">
+			</td>
+			<td id="p_4_1" width="46" height="46" >
+				<img id="i_4_1" src="/resource/panel.png">
+			</td>
+			<td id="p_4_2" width="46" height="46" >
+				<img id="i_4_2" src="/resource/panel.png">
+			</td>
+			<td id="p_4_3" width="46" height="46" >
+				<img id="i_4_3" src="/resource/panel.png">
+			</td>
+			<td id="p_4_4" width="46" height="46" >
+				<img id="i_4_4" src="/resource/panel.png">
+			</td>
+			<td id="p_4_5" width="46" height="46" >
+				<img id="i_4_5" src="/resource/panel.png">
+			</td>
+			<td id="p_4_6" width="46" height="46" >
+				<img id="i_4_6" src="/resource/panel.png">
+			</td>
+			<td id="p_4_7" width="46" height="46" >
+				<img id="i_4_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_5_0" width="46" height="46" >
+				<img id="i_5_0" src="/resource/panel.png">
+			</td>
+			<td id="p_5_1" width="46" height="46" >
+				<img id="i_5_1" src="/resource/panel.png">
+			</td>
+			<td id="p_5_2" width="46" height="46" >
+				<img id="i_5_2" src="/resource/panel.png">
+			</td>
+			<td id="p_5_3" width="46" height="46" >
+				<img id="i_5_3" src="/resource/panel.png">
+			</td>
+			<td id="p_5_4" width="46" height="46" >
+				<img id="i_5_4" src="/resource/panel.png">
+			</td>
+			<td id="p_5_5" width="46" height="46" >
+				<img id="i_5_5" src="/resource/panel.png">
+			</td>
+			<td id="p_5_6" width="46" height="46" >
+				<img id="i_5_6" src="/resource/panel.png">
+			</td>
+			<td id="p_5_7" width="46" height="46" >
+				<img id="i_5_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_6_0" width="46" height="46" >
+				<img id="i_6_0" src="/resource/panel.png">
+			</td>
+			<td id="p_6_1" width="46" height="46" >
+				<img id="i_6_1" src="/resource/panel.png">
+			</td>
+			<td id="p_6_2" width="46" height="46" >
+				<img id="i_6_2" src="/resource/panel.png">
+			</td>
+			<td id="p_6_3" width="46" height="46" >
+				<img id="i_6_3" src="/resource/panel.png">
+			</td>
+			<td id="p_6_4" width="46" height="46" >
+				<img id="i_6_4" src="/resource/panel.png">
+			</td>
+			<td id="p_6_5" width="46" height="46" >
+				<img id="i_6_5" src="/resource/panel.png">
+			</td>
+			<td id="p_6_6" width="46" height="46" >
+				<img id="i_6_6" src="/resource/panel.png">
+			</td>
+			<td id="p_6_7" width="46" height="46" >
+				<img id="i_6_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_7_0" width="46" height="46" >
+				<img id="i_7_0" src="/resource/panel.png">
+			</td>
+			<td id="p_7_1" width="46" height="46" >
+				<img id="i_7_1" src="/resource/panel.png">
+			</td>
+			<td id="p_7_2" width="46" height="46" >
+				<img id="i_7_2" src="/resource/panel.png">
+			</td>
+			<td id="p_7_3" width="46" height="46" >
+				<img id="i_7_3" src="/resource/panel.png">
+			</td>
+			<td id="p_7_4" width="46" height="46" >
+				<img id="i_7_4" src="/resource/panel.png">
+			</td>
+			<td id="p_7_5" width="46" height="46" >
+				<img id="i_7_5" src="/resource/panel.png">
+			</td>
+			<td id="p_7_6" width="46" height="46" >
+				<img id="i_7_6" src="/resource/panel.png">
+			</td>
+			<td id="p_7_7" width="46" height="46" >
+				<img id="i_7_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_8_0" width="46" height="46" >
+				<img id="i_8_0" src="/resource/panel.png">
+			</td>
+			<td id="p_8_1" width="46" height="46" >
+				<img id="i_8_1" src="/resource/panel.png">
+			</td>
+			<td id="p_8_2" width="46" height="46" >
+				<img id="i_8_2" src="/resource/panel.png">
+			</td>
+			<td id="p_8_3" width="46" height="46" >
+				<img id="i_8_3" src="/resource/panel.png">
+			</td>
+			<td id="p_8_4" width="46" height="46" >
+				<img id="i_8_4" src="/resource/panel.png">
+			</td>
+			<td id="p_8_5" width="46" height="46" >
+				<img id="i_8_5" src="/resource/panel.png">
+			</td>
+			<td id="p_8_6" width="46" height="46" >
+				<img id="i_8_6" src="/resource/panel.png">
+			</td>
+			<td id="p_8_7" width="46" height="46" >
+				<img id="i_8_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_9_0" width="46" height="46" >
+				<img id="i_9_0" src="/resource/panel.png">
+			</td>
+			<td id="p_9_1" width="46" height="46" >
+				<img id="i_9_1" src="/resource/panel.png">
+			</td>
+			<td id="p_9_2" width="46" height="46" >
+				<img id="i_9_2" src="/resource/panel.png">
+			</td>
+			<td id="p_9_3" width="46" height="46" >
+				<img id="i_9_3" src="/resource/panel.png">
+			</td>
+			<td id="p_9_4" width="46" height="46" >
+				<img id="i_9_4" src="/resource/panel.png">
+			</td>
+			<td id="p_9_5" width="46" height="46" >
+				<img id="i_9_5" src="/resource/panel.png">
+			</td>
+			<td id="p_9_6" width="46" height="46" >
+				<img id="i_9_6" src="/resource/panel.png">
+			</td>
+			<td id="p_9_7" width="46" height="46" >
+				<img id="i_9_7" src="/resource/panel.png">
+			</td>	
+
+			<tr></tr>
+			<td id="p_x_x" width="46" height="46" colspan="8">
+				<img id="i_x_x" src="/resource/panel0.gif" width="400" height="90" >
+			</td>
+		</table>
+		
+		
+	</div>
+	<!--ボタン-->
+	<center>
+	<div id="button-wrapper">
+		<table>
+			<td>
+				<button type="button" style="height: 50px;" id="clear-button">
+					<img src="/resource/retry.png" alt="RETRY" style="height: 100%;">
+				</button>
+			</td>
+			<!--
+			<td>
+				<button type="button" style="height: 50px;" id="start-button">
+					<img src="" alt="RUN" style="height: 100%;">
+				</button>
+			</td>
+			-->
+			<td>
+				<div id="next"></div>
+			</td>
+		</table>
+	</div>
+	</center>
+	<br /><br />
+<!--MESSAGE-->
+<div id="message"></div>
+<div id="message2"></div>
+<script type="text/javascript" src="/resource/jqmin.js"></script>
+<script type="text/javascript" src="/resource/gifer.js"></script>
+<script type="text/javascript" src="/resource/panel.js"></script>
+</body>
+</html>

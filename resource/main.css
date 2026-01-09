@@ -1,0 +1,35 @@
+.canvas-wrapper {
+    position: relative;
+    width: 400;
+    height: 600;
+    margin: 0 auto;
+}
+.canvas-wrapper canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    border: 1px solid #999999;
+    touch-action: none;
+    margin: 0 auto;
+    
+    /* canvas下のオブジェクトにイベント渡す */
+    pointer-events: none;
+}
+#wallpaper-area {
+    z-index: 1; /* テキストのz-indexより小さく設定 */
+}
+#panels {
+    position: absolute;
+    z-index: 2; /* テキストのz-indexより小さく設定 */
+}
+#animation-area {
+    z-index: 3; /* テキストのz-indexより小さく設定 */
+    border: 0px solid #999999;
+}
+#message-area {
+    z-index: 4; /* テキストのz-indexより小さく設定 */
+}
+.button-wrapper {
+    margin: 0 auto;
+}
